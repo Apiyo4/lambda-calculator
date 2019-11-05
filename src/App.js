@@ -33,10 +33,13 @@ function App() {
 
         <div className='flexMixin'>
           <div className='special'>
-              <Specials 
-                selectedButton = {selectedButton}
-                 setSelectedButton = {setSelectedButton}
-              /> 
+              <div className='yaleBlue'>
+                <Specials 
+                  selectedButton = {selectedButton}
+                  setSelectedButton = {setSelectedButton}
+                /> 
+              </div>
+              
               <div className='numbers'>
                 <Numbers
                   selectedButton = {selectedButton}
