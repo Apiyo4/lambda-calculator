@@ -30,19 +30,32 @@ function App() {
         setSelectedButton = {setSelectedButton}
         />
         }
+
+        <div className='flexMixin'>
+          <div className='special'>
+              <Specials 
+                selectedButton = {selectedButton}
+                 setSelectedButton = {setSelectedButton}
+              /> 
+              <div className='numbers'>
+                <Numbers
+                  selectedButton = {selectedButton}
+                  setSelectedButton = {setSelectedButton}
+                />
+              </div>
+          </div>
+           <div className='operator'>
+              <Operators 
+                selectedButton = {selectedButton}
+                setSelectedButton = {setSelectedButton}
+            />
+           </div>
+          
+        </div>
         
-        <Numbers
-        selectedButton = {selectedButton}
-        setSelectedButton = {setSelectedButton}
-         />
-        <Operators 
-        selectedButton = {selectedButton}
-        setSelectedButton = {setSelectedButton}
-        />
-        <Specials 
-       selectedButton = {selectedButton}
-       setSelectedButton = {setSelectedButton}
-        />
+        
+        
+        
         
       </div>
     </div>

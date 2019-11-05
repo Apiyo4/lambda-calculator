@@ -10,7 +10,7 @@ const OperatorButton = (props) => {
       {/* Display a button element rendering the data being passed down from the parent container on props */
       <button onClick ={() =>{
   
-        props.setSelectedButton(opValue[1])
+        props.setSelectedButton(opValue[0])
         // console.log(props.selectedButton);
       }} 
     >{opValue[0]}</button>
