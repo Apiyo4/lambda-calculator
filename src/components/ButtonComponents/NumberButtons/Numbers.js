@@ -11,7 +11,7 @@ import { numbers } from '../../../data'
 import  data  from '../../../data' 
 // console.log(numbers);
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState] = useState(data.numbers);
   console.log(numberState);
@@ -27,6 +27,8 @@ const Numbers = () => {
           <NumberButton 
           num={num} 
           key={index} 
+          selectedButton = {props.selectedButton}
+        setSelectedButton = {props.setSelectedButton}
           />
         )
 

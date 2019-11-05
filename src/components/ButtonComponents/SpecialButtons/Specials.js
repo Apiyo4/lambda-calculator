@@ -7,7 +7,7 @@ import data from '../../../data'
 import SpecialButton from './SpecialButton'
 // console.log(specials);
 
-const Specials = () => {
+const Specials = (props) => {
   // STEP 2 - add the imported data to state
   const [specialState, setSpecialState] = useState(data.specials);
   console.log(specialState);
@@ -22,6 +22,8 @@ const Specials = () => {
            <SpecialButton 
            special={special}
            key = {index}
+           selectedButton = {props.selectedButton}
+           setSelectedButton = {props.setSelectedButton}
            />
          )
        })
