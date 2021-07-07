@@ -1,5 +1,11 @@
 import React from "react";
 
-const Display = () => {
-  return <div className="display">{/* Display any props data here */}</div>;
+const Display = (props) => {
+  console.log(props.selectedButton);
+  return <div className="display">{/* Display any props data here */
+
+  }
+  {props.selectedButton}
+  </div>;
 };
+export default Display;
